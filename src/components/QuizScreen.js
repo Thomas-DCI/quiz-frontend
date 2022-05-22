@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Question } from "./Question";
+
 export const QuizScreen = () => {
   const [questions, setQuestions] = useState([]);
-
+  const [qindex, setQindex] = useState(0);
   useEffect(() => {
     (async () => {
       try {
@@ -17,5 +19,9 @@ export const QuizScreen = () => {
     })();
   }, []);
 
-  return <div>{JSON.stringify(questions)}</div>;
+  return (
+    <div>
+      <Question question={questions[qindex]} />
+    </div>
+  );
 };

@@ -31,7 +31,11 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
+.quizContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 a:link,
 a:visited,
 a:active {

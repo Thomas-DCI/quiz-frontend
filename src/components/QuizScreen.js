@@ -20,7 +20,7 @@ export const QuizScreen = () => {
   }, []);
 
   return (
-    <div>
+    <div className="quizContainer">
       <Question question={questions[qindex]} />
     </div>
   );

@@ -1,7 +1,7 @@
 .questioncard {
-  width: 80%;
+  width: 90%;
   height: auto;
   border-radius: 1em;
-  border-color: #b6b5b5;
-  border-width: 1px;
+  border: 1px solid #c6c0c0;
+  text-align: center;
 }
